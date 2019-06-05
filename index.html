@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basscss Starter</title>
+	<link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+	
+</head>
+
+<body>
+
+<div class="hero">
+	
+</div>
+
+<div class="body relative">
+
+<nav class="follow-nav">
+	<ol class="list-reset">
+		<li><a href="#how" class="active">How We Do It</a></li>
+		<li><a href="#solution">Solution</a></li>
+		<li><a href="#why">Why SourceDay</a></li>
+		<li><a href="#resources">Resources</a></li>
+		<li><a href="#company">Company</a></li>
+	</ol>
+</nav>
+
+<div id="how" class="max-width-2 mx-auto section">
+	<div class="clearfix">
+		<h1>How We Do It</h1>
+	</div>
+</div>
+
+<div id="solution" class="max-width-2 mx-auto section">
+	<div class="clearfix">
+		<h1>Solution</h1>
+	</div>
+</div>
+
+<div id="why" class="max-width-2 mx-auto section">
+	<div class="clearfix">
+		<h1>Why SourceDay</h1>
+	</div>
+</div>
+
+<div id="resources" class="max-width-2 mx-auto section">
+	<div class="clearfix">
+		<h1>Resources</h1>
+	</div>
+</div>
+
+<div id="company" class="max-width-2 mx-auto section">
+	<div class="clearfix">
+		<h1>Company</h1>
+	</div>
+</div>
+
+</div>
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+
+	<script>
+
+
+  $(function() {  
+
+  var nav_container = $(".follow-nav");
+  var nav = $(".follow-nav ol");
+                     // When the page has loaded,
+  nav.waypoint({               // create a waypoint
+    handler: function(event, direction) {
+      nav_container.toggleClass('fixed');
+    },
+    offset: 70
+})
+});
+ 
+
+
+var sections = $(".section");
+var navigation_links = $(".follow-nav ol a");
+
+sections.waypoint({
+    handler: function(event, direction) {
+
+        var active_section = this;
+        if (direction === "up") active_section = this.prev();
+
+        var active_link = $('.follow-nav ol a[href="#' + active_section.element.id + '"]');
+        navigation_links.removeClass("active");
+        active_link.addClass("active");
+
+    },
+    offset: '30%'
+})
+	</script>
+</body>
+</html>
