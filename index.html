@@ -31,7 +31,7 @@
 <div id="how" class="max-width-3 ml-auto section">
 	<div class="clearfix">
 		<h1>How We Do It</h1>
-		<div id="lottie" style="width:200px;"></div>
+		<div id="lottie" style="width:200px; margin-top:100px;"></div>
 	</div>
 </div>
 
@@ -69,7 +69,7 @@
   container: document.getElementById('lottie'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'icons/assembly-line.json' // the path to the animation json
 });
 
@@ -82,6 +82,7 @@
   nav.waypoint({               // create a waypoint
     handler: function(event, direction) {
       nav_container.toggleClass('fixed');
+      lottie.play();
     },
     offset: 70
 })
