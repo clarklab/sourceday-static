@@ -16,9 +16,10 @@
 	
 </div>
 
-<div class="body relative">
+<div class="body relative max-width-4 mx-auto py4 px2">
 
-<nav class="follow-nav">
+
+<nav class="follow-nav xs-hide sm-hide md-hide">
 	<ol class="list-reset">
 		<li><a href="#how" class="active">How We Do It</a></li>
 		<li><a href="#solution">Solution</a></li>
@@ -28,32 +29,32 @@
 	</ol>
 </nav>
 
-<div id="how" class="max-width-2 mx-auto section">
+<div id="how" class="max-width-3 ml-auto section">
 	<div class="clearfix">
 		<h1>How We Do It</h1>
-		<img src="icons/hub.svg" width="200" height="200" alt="">
+		<div id="lottie" style="width:200px;"></div>
 	</div>
 </div>
 
-<div id="solution" class="max-width-2 mx-auto section">
+<div id="solution" class="max-width-3 ml-auto section">
 	<div class="clearfix">
 		<h1>Solution</h1>
 	</div>
 </div>
 
-<div id="why" class="max-width-2 mx-auto section">
+<div id="why" class="max-width-3 ml-auto section">
 	<div class="clearfix">
 		<h1>Why SourceDay</h1>
 	</div>
 </div>
 
-<div id="resources" class="max-width-2 mx-auto section">
+<div id="resources" class="max-width-3 ml-auto section">
 	<div class="clearfix">
 		<h1>Resources</h1>
 	</div>
 </div>
 
-<div id="company" class="max-width-2 mx-auto section">
+<div id="company" class="max-width-3 ml-auto section">
 	<div class="clearfix">
 		<h1>Company</h1>
 	</div>
@@ -66,7 +67,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.min.js" type="text/javascript"></script>
+
 	<script>
+
+
+		lottie.loadAnimation({
+  container: document.getElementById('lottie'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'icons/assembly-line.json' // the path to the animation json
+});
 
 
   $(function() {  
@@ -88,14 +100,17 @@ var sections = $(".section");
 var navigation_links = $(".follow-nav ol a");
 
 sections.waypoint({
-    handler: function(event, direction) {
+    handler: function(direction) {
 
-        var active_section = this;
-        if (direction === "up") active_section = this.prev();
+        active_section = this;
+        active_section_id = active_section.element.id;
+        // if (direction === "up") active_section_id = active_section.next().attr("id");
+        // alert(active_section_id);
 
-        var active_link = $('.follow-nav ol a[href="#' + active_section.element.id + '"]');
+        var active_link = $('.follow-nav ol a[href="#' + active_section_id + '"]');
         navigation_links.removeClass("active");
-        active_link.addClass("active");
+        if (direction === "down") active_link.addClass("active");
+        if (direction === "up") active_link.parent().prev().children("a").addClass("active");
 
     },
     offset: '30%'

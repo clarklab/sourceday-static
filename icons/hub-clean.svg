@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="276px" height="269px" viewBox="0 0 276 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>ILL - PO SYSTEM - full circles</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop-homepage" transform="translate(-1037.000000, -2063.000000)">
+            <g id="Group-4" transform="translate(0.000000, 1924.000000)">
+                <g id="ILL---PO-SYSTEM---full-circles" transform="translate(1042.000000, 144.000000)">
+                    <g id="dark" stroke="#879398" stroke-linecap="round" stroke-width="9">
+                        <path d="M50,115 L98.4808783,130.830491" id="line-5-copy"></path>
+                        <path d="M83,212 L112.643148,170.499593" id="line-4-copy"></path>
+                        <path d="M183,211 L154,171" id="line-3-copy"></path>
+                        <path d="M216,115 L169,130" id="line-2-copy"></path>
+                        <path d="M133.5,55 L133.5,104.5" id="line-1-copy"></path>
+                        <circle id="circle-center-copy" cx="133" cy="141" r="36"></circle>
+                        <circle id="circle-5-copy" cx="25.5" cy="106.5" r="25.5"></circle>
+                        <circle id="circle-4-copy" cx="65.5" cy="233.5" r="25.5"></circle>
+                        <circle id="circle-3-copy" cx="200.5" cy="233.5" r="25.5"></circle>
+                        <circle id="circle-2-copy" cx="240.5" cy="106.5" r="25.5"></circle>
+                        <circle id="circle-1-copy" cx="132.5" cy="25.5" r="25.5"></circle>
+                    </g>
+                    <g id="light" stroke="#FFFFFF" stroke-linecap="round" stroke-width="9">
+                        <path d="M50,115 L98.4808783,130.830491" id="line-5"></path>
+                        <path d="M83,212 L112.643148,170.499593" id="line-4"></path>
+                        <path d="M183,211 L154,171" id="line-3"></path>
+                        <path d="M216,115 L169,130" id="line-2"></path>
+                        <path d="M133.5,55 L133.5,104.5" id="line-1"></path>
+                        <circle id="circle-center" cx="133" cy="141" r="36"></circle>
+                        <circle id="circle-5" cx="25.5" cy="106.5" r="25.5"></circle>
+                        <circle id="circle-4" cx="65.5" cy="233.5" r="25.5"></circle>
+                        <circle id="circle-3" cx="200.5" cy="233.5" r="25.5"></circle>
+                        <circle id="circle-2" cx="240.5" cy="106.5" r="25.5"></circle>
+                        <circle id="circle-1" cx="132.5" cy="25.5" r="25.5"></circle>
+                    </g>
+                    <circle id="dot" fill="#18BE00" cx="133" cy="141" r="18"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

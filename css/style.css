@@ -61,8 +61,9 @@
 }
 
 body{ font-family: 'gordita', sans-serif; margin:0; padding:0;}
+*{box-sizing: border-box;}
 
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-weight: 500;}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-weight: normal; line-height: 1.4}
 
 
 .follow-nav {
@@ -87,6 +88,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-weight: 500;}
 	position: relative;
 	display: inline-block;
 	margin-bottom:12px;
+	margin-top:0;
+	transition: .2s ease margin-top;
+
 }
 .follow-nav a.active{
 	opacity: 1;
@@ -113,7 +117,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-weight: 500;}
 .section{
 	height:80vh;
 	background:var(--light);
-	margin:20px auto;
+	margin-top:20px;
+	margin-bottom:20px;
 	border-radius:10px;
 	padding:0 20px;
 }
