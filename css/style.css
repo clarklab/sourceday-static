@@ -224,6 +224,6 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-weight: normal; line-height: 1.5}
 
 	h2, .h2{font-size:2.2rem;}
 
-	.max-width-4{padding-left:4rem; padding-right:4rem;}
+	.max-width-4{padding-left:4rem; padding-right:11rem;}
 	.mb4{margin-bottom:6rem;}
 }
