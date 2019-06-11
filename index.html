@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SourceDay</title>
 	<link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	
@@ -12,85 +15,183 @@
 
 <body>
 
-<div class="hero">
+<div class="hero mb4">
 	<img src="images/hero-card.png" class="first" alt="">
 	<img src="images/hero-card-2.png" class="second" alt="">
 
 </div>
 
-<div class="body relative mx-auto py4 pl4">
-
-
 
 <nav class="follow-nav xs-hide sm-hide md-hide">
 	<ol class="list-reset">
-		<li><a href="#how" class="active">How we do it</a></li>
 		<li><a href="#with">Who we work with</a></li>
+		<li><a href="#how">How we do it</a></li>
 		<li><a href="#help">Who we help</a></li>
 		<li><a href="#ask">Ask us anything</a></li>
 	</ol>
 </nav>
 
-<div id="how" class="max-width-4 ml-auto" style="height:800px;">
+<div id="intro" class="max-width-4 ml-auto mb4">
+	<p class="h2 my4">SourceDay automates all supplier collaboration, from RFQ to PO acknowledgment to supplier invoice and final payment—all in one unified place with mutual visibility and accountability. </p>
+
+	<div id="with" class="section" style="height:400px; background-color:#eee; border-radius:10px;"> logos</div>
+</div>
+
+<div class="bg-dark mb4">
+
+<div class="clipper">
+<nav class="follow-nav xs-hide sm-hide md-hide">
+	<ol class="list-reset">
+		<li><a href="#with">Who we work with</a></li>
+		<li><a href="#how">How we do it</a></li>
+		<li><a href="#help">Who we help</a></li>
+		<li><a href="#ask">Ask us anything</a></li>
+	</ol>
+</nav>
+</div>
+
+<div id="how" class="max-width-4 ml-auto section relative" style="height:550px;">
 	<div class="clearfix">
-		<h1>How We Do It</h1>
+
+		<div class="slides clearfix pt4">
+
+			<div class="slide">
+				<div class="sm-col sm-col-6">
+					<div class="content p3 center">
+						<p class="h3 m0 pt3">Automated PO Mgmt</p>
+						<p class="slab">Digitize and standardize communication between buyers and manufacturers, with all changes to lead-times, pricing, and quantities updated in real time and immediately fed into your ERP.</p>
+						<p><a href="#" class="cta mt3 block">See How</a></p>
+					</div>
+				</div>
+				<div class="sm-col sm-col-6">
+					<div id="automatedSlideAnimation" class="lottie fit"></div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="sm-col sm-col-6">
+					<div class="content p3 center">
+						<p class="h3 m0 pt3">Request For Quote</p>
+						<p class="slab">Digitize and standardize communication between buyers and manufacturers, with all changes to lead-times, pricing, and quantities updated in real time and immediately fed into your ERP.</p>
+						<p><a href="#" class="cta mt3 block">See How</a></p>
+					</div>
+				</div>
+				<div class="sm-col sm-col-6">
+					<div id="contractSlideAnimation" class="lottie fit"></div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="sm-col sm-col-6">
+					<div class="content p3 center">
+						<p class="h3 m0 pt3">Document Control</p>
+						<p class="slab">Digitize and standardize communication between buyers and manufacturers, with all changes to lead-times, pricing, and quantities updated in real time and immediately fed into your ERP.</p>
+						<p><a href="#" class="cta mt3 block">See How</a></p>
+					</div>
+				</div>
+				<div class="sm-col sm-col-6">
+					<div id="globeSlideAnimation" class="lottie fit"></div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="sm-col sm-col-6">
+					<div class="content p3 center">
+						<p class="h3 m0 pt3">Supplier Scorecard</p>
+						<p class="slab">Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+						<p><a href="#" class="cta mt3 block">See How</a></p>
+					</div>
+				</div>
+				<div class="sm-col sm-col-6">
+					<div id="globeSlideAnimation" class="lottie fit"></div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="sm-col sm-col-6">
+					<div class="content p3 center">
+						<p class="h3 m0 pt3">Onboarding & Support</p>
+						<p class="slab">Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+						<p><a href="#" class="cta mt3 block">See How</a></p>
+					</div>
+				</div>
+				<div class="sm-col sm-col-6">
+					<div id="globeSlideAnimation" class="lottie fit"></div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<div class="sm-col sm-col-6">
+					<div class="content p3 center">
+						<p class="h3 m0 pt3">Supplier Analytics</p>
+						<p class="slab">Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+						<p><a href="#" class="cta mt3 block">See How</a></p>
+					</div>
+				</div>
+				<div class="sm-col sm-col-6">
+					<div id="globeSlideAnimation" class="lottie fit"></div>
+				</div>
+			</div>
+
+		</div>
 		
 
 		<div class="cards flex">
-			<div class="card lg-col-6 p2 automated active">
+			<div class="card lg-col-6 p3 automated">
+				<a href="#" class="h4 center block mb2">Automated PO Mgmt</a>
 				<div id="automatedAnimation" class="lottie fit"></div>
-				<p class="h4 center">Automated PO Mgmt</p>
+				<div class="shade"></div>
 			</div>
-			<div class="card lg-col-6 p2 contract">
+			<div class="card lg-col-6 p3 contract">
+				<a href="#" class="h4 center block mb2">Request For Quote</a>
 				<div id="contractAnimation" class="lottie fit"></div>
-				<p class="h4 center">Request For Quote</p>
+				<div class="shade"></div>
 			</div>
-			<div class="card lg-col-6 p2 globe">
+			<div class="card lg-col-6 p3 globe active">
+				<a href="#" class="h4 center block mb2">Document Control</a>
 				<div id="globeAnimation" class="lottie fit"></div>
-				<p class="h4 center">Document Control</p>
+				<div class="shade"></div>
 			</div>
-			<div class="card lg-col-6 p2 scorecard">
+			<div class="card lg-col-6 p3 scorecard">
+				<a href="#" class="h4 center block mb2">Supplier Scorecard</a>
 				<div id="scorecardAnimation" class="lottie fit"></div>
-				<p class="h4 center">Supplier Scorecard</p>
+				<div class="shade"></div>
 			</div>
-			<div class="card lg-col-6 p2 support">
+			<div class="card lg-col-6 p3 support">
+				<a href="#" class="h4 center block mb2">Onboarding & Support</a>
 				<div id="supportAnimation" class="lottie fit"></div>
-				<p class="h4 center">Onboarding & Support</p>
+				<div class="shade"></div>
 			</div>
-			<div class="card lg-col-6 p2 insight">
+			<div class="card lg-col-6 p3 insight">
+				<a href="#" class="h4 center block mb2">Supplier Analytics</a>
 				<div id="insightAnimation" class="lottie fit"></div>
-				<p class="h4 center">Supplier Insights & Analytics</p>
+				<div class="shade"></div>
 			</div>
 		</div>
 	</div>
 </div>
-
-<div id="with" class="max-width-3 ml-auto section">
-	<div class="clearfix">
-		<h1>Who we work with</h1>
-	</div>
 </div>
 
-<div id="help" class="max-width-3 ml-auto section">
+<div id="help" class="max-width-4 ml-auto section">
 	<div class="clearfix">
 		<h1>Who we help</h1>
 	</div>
 </div>
 
-<div id="ask" class="max-width-3 ml-auto section">
+<div id="ask" class="max-width-4 ml-auto section">
 	<div class="clearfix">
 		<h1>Ask us anything</h1>
 	</div>
 </div>
 
-</div>
-
 <script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+<script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.min.js" type="text/javascript"></script>
 
 	<script>
 
@@ -99,7 +200,7 @@
 		  path: 'icons/automated.json',
 		  renderer: 'svg',
 		  loop: true,
-		  autoplay: true,
+		  autoplay: false,
 		  name: 'automatedAnimation',
 		})
 
@@ -117,7 +218,7 @@
 		  path: 'icons/globe.json',
 		  renderer: 'svg',
 		  loop: true,
-		  autoplay: false,
+		  autoplay: true,
 		  name: 'globeAnimation',
 		})
 
@@ -148,6 +249,15 @@
 		  name: 'insightAnimation',
 		})
 
+		var globeSlideAnimation = bodymovin.loadAnimation({
+		  container: document.getElementById('globeSlideAnimation'),
+		  path: 'icons/globe-white.json',
+		  renderer: 'svg',
+		  loop: true,
+		  autoplay: true,
+		  name: 'globeSlide',
+		})
+
 		$( ".card:not('.active')" ).hover(
 		  function() {
 		    target = $( this ).children( ".lottie" ).attr("id");
@@ -156,22 +266,6 @@
 		    lottie.stop(target);
 		  }
 		);
-
-
-
-
-  $(function() {  
-
-  var nav_container = $(".follow-nav");
-  var nav = $(".follow-nav ol");
-                     // When the page has loaded,
-  nav.waypoint({               // create a waypoint
-    handler: function(event, direction) {
-      nav_container.toggleClass('fixed');
-    },
-    offset: 70
-})
-});
  
 
 
@@ -194,6 +288,16 @@ sections.waypoint({
     },
     offset: '30%'
 })
+
+
+$('.slides').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  fade: true,
+  prevNextButtons: false,
+  initialIndex: 2
+});
 	</script>
 </body>
 </html>
