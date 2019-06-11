@@ -13,11 +13,12 @@
 <body>
 
 <div class="hero">
-	<img src="images/hero-card.png" alt="">
-	<video src="video/sourceday-video.mp4" muted autoplay loop></video>
+	<img src="images/hero-card.png" class="first" alt="">
+	<img src="images/hero-card-2.png" class="second" alt="">
+
 </div>
 
-<div class="body relative max-width-4 mx-auto py4 px2">
+<div class="body relative mx-auto py4 pl4">
 
 
 
@@ -30,10 +31,37 @@
 	</ol>
 </nav>
 
-<div id="how" class="max-width-3 ml-auto section">
+<div id="how" class="max-width-4 ml-auto" style="height:800px;">
 	<div class="clearfix">
 		<h1>How We Do It</h1>
-		<div id="lottie" style="width:200px; margin-top:100px;"></div>
+		
+
+		<div class="cards flex">
+			<div class="card lg-col-6 p2 automated active">
+				<div id="automatedAnimation" class="lottie fit"></div>
+				<p class="h4 center">Automated PO Mgmt</p>
+			</div>
+			<div class="card lg-col-6 p2 contract">
+				<div id="contractAnimation" class="lottie fit"></div>
+				<p class="h4 center">Request For Quote</p>
+			</div>
+			<div class="card lg-col-6 p2 globe">
+				<div id="globeAnimation" class="lottie fit"></div>
+				<p class="h4 center">Document Control</p>
+			</div>
+			<div class="card lg-col-6 p2 scorecard">
+				<div id="scorecardAnimation" class="lottie fit"></div>
+				<p class="h4 center">Supplier Scorecard</p>
+			</div>
+			<div class="card lg-col-6 p2 support">
+				<div id="supportAnimation" class="lottie fit"></div>
+				<p class="h4 center">Onboarding & Support</p>
+			</div>
+			<div class="card lg-col-6 p2 insight">
+				<div id="insightAnimation" class="lottie fit"></div>
+				<p class="h4 center">Supplier Insights & Analytics</p>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -66,14 +94,70 @@
 
 	<script>
 
+		var automatedAnimation = bodymovin.loadAnimation({
+		  container: document.getElementById('automatedAnimation'),
+		  path: 'icons/automated.json',
+		  renderer: 'svg',
+		  loop: true,
+		  autoplay: true,
+		  name: 'automatedAnimation',
+		})
 
-		lottie.loadAnimation({
-  container: document.getElementById('lottie'), // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: true,
-  autoplay: false,
-  path: 'icons/assembly-line.json' // the path to the animation json
-});
+		var contractAnimation = bodymovin.loadAnimation({
+		  container: document.getElementById('contractAnimation'),
+		  path: 'icons/contract.json',
+		  renderer: 'svg',
+		  loop: true,
+		  autoplay: false,
+		  name:'contractAnimation',
+		})
+
+		var globeAnimation = bodymovin.loadAnimation({
+		  container: document.getElementById('globeAnimation'),
+		  path: 'icons/globe.json',
+		  renderer: 'svg',
+		  loop: true,
+		  autoplay: false,
+		  name: 'globeAnimation',
+		})
+
+		var scorecardAnimation = bodymovin.loadAnimation({
+		  container: document.getElementById('scorecardAnimation'),
+		  path: 'icons/scorecard.json',
+		  renderer: 'svg',
+		  loop: true,
+		  autoplay: false,
+		  name: 'scorecardAnimation',
+		})
+
+		var supportAnimation = bodymovin.loadAnimation({
+		  container: document.getElementById('supportAnimation'),
+		  path: 'icons/support.json',
+		  renderer: 'svg',
+		  loop: true,
+		  autoplay: false,
+		  name: 'supportAnimation',
+		})
+
+		var insightAnimation = bodymovin.loadAnimation({
+		  container: document.getElementById('insightAnimation'),
+		  path: 'icons/insight.json',
+		  renderer: 'svg',
+		  loop: true,
+		  autoplay: false,
+		  name: 'insightAnimation',
+		})
+
+		$( ".card:not('.active')" ).hover(
+		  function() {
+		    target = $( this ).children( ".lottie" ).attr("id");
+		    lottie.play(target);
+		  }, function() {
+		    lottie.stop(target);
+		  }
+		);
+
+
 
 
   $(function() {  
@@ -84,7 +168,6 @@
   nav.waypoint({               // create a waypoint
     handler: function(event, direction) {
       nav_container.toggleClass('fixed');
-      lottie.play();
     },
     offset: 70
 })
