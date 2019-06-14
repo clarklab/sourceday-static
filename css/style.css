@@ -132,16 +132,19 @@ header.main .button{
 header.main .button:hover{
 	background:var(--navy);
 }
+.home header .max-width-4{
+	padding:0;
+}
 /** END OF MAIN NAV **/
 
 
 .follow-nav {
-	padding:20px;
+	padding:20px 0 0 0;
 	max-width: 64rem;
 	width:100%;
 	left:50%;
 	top:100px;
-	transform: translateX(-53%);
+	transform: translateX(-50%);
 	position: fixed;
 }
 
@@ -211,6 +214,7 @@ header.main .button:hover{
 
 .home .bg-dark {position: relative;}
 
+
 .clipper{position: absolute;
     top: 0;
     left: 0;
@@ -251,6 +255,11 @@ header.main .button:hover{
 	position: relative;
 	z-index: 2;
 }
+.home-hero .hold{
+	display: inline-block;
+	width:0;
+	opacity: 0;
+}
 /** END OF HOME HERO **/
 
 .section{
@@ -287,6 +296,7 @@ header.main .button:hover{
 .card a, .card .lottie{
 	position: relative;
 	z-index: 2;
+	color:var(--navy);
 }
 
 .card.active .shade{
@@ -455,6 +465,15 @@ header.main .button:hover{
 .flickity-3 .flickity-page-dots{
 	text-align: left;
 	bottom:0;
+}
+@media screen and (max-width:40em){
+	.flickity-3 .carousel-cell {
+	  width: 42%;
+	  margin:80px 5% 80px 5%;
+	}
+	.flickity-3 .carousel-cell:after{
+		display: none;
+	}
 }
 /** END OF FLICKITY 3-UP **/
 
