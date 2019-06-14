@@ -86,18 +86,20 @@ body a{color:var(--navy); text-decoration: none;}
 
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-weight: normal; line-height: 1.5}
+h3, .h3:not(.button){letter-spacing: 1.33px; line-height: 1.35}
 p{line-height: 1.5; font-weight: 200;}
 .bold{font-family: 'gordita-bold'; font-weight: bold;}
 .medium{font-family: 'gordita-medium';}
 .light{font-family: 'gordita-light'; font-weight: 200}
 .small{font-size:.65rem;}
+.shade{opacity:.75;}
 .big{font-size: 4.70rem; letter-spacing: -1.5px; line-height:1.2;}
 
-.cta{font-family: 'Roboto Slab'; color:var(--green-punch); border-bottom:2px solid var(--green-punch); font-weight: 500; transition: .3s ease color;}
+.cta{font-family: 'Roboto Slab'; display: inline-block; color:var(--green-punch); border-bottom:2px solid var(--green-punch); font-weight: 500; transition: .3s ease color;}
 .cta:hover{color:var(--navy);}
 .cta.black{color:var(--black); border-bottom-color: var(--black);}
 .cta.black:hover{color:var(--green);}
-.cta.light{font-weight: 100;}
+.cta.light{font-weight: 100; border-width:1px;}
 
 .serif{font-family: 'Roboto Slab', serif; font-weight: 100;}
 
@@ -112,13 +114,13 @@ header.main{
 	left:0;
 	right:0;
 }
-header.main h1 {
+.logo {
 	font-family: "gordita-medium";
 	font-size: 1.5rem;
 	line-height: 100px;
 	height:100px;
-	margin:0;
 }
+
 .logo span{
 	color:var(--green);
 }
@@ -136,6 +138,19 @@ header.main .button:hover{
 	padding:0;
 }
 /** END OF MAIN NAV **/
+
+/** FOOTER */
+footer{
+	font-size: .8rem;
+}
+footer .logo{
+	line-height: 1;
+	height: auto;
+}
+footer p{
+	margin:.25rem 0;
+}
+/** END OF FOOTER */
 
 
 .follow-nav {
@@ -309,6 +324,7 @@ header.main .button:hover{
 	right:0;
 	bottom:0;
 	background-color:var(--mint);
+	opacity: 1;
 }
 
 .card .fit{
@@ -466,6 +482,7 @@ header.main .button:hover{
 	text-align: left;
 	bottom:0;
 }
+.flickity-page-dots .dot{margin:0 5px; width:8px; height:8px;}
 @media screen and (max-width:40em){
 	.flickity-3 .carousel-cell {
 	  width: 42%;
