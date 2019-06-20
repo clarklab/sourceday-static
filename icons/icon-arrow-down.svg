@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon-arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop-homepage" transform="translate(-816.000000, -3788.000000)" stroke="#879398" stroke-width="2">
+            <g id="BLOCK---ACCORDION" transform="translate(0.000000, 3024.000000)">
+                <g id="accordion" transform="translate(380.000000, 120.000000)">
+                    <g id="accordion---inactive" transform="translate(0.000000, 560.000000)">
+                        <g id="Group-6" transform="translate(436.000000, 83.928932)">
+                            <g id="icon-arrow-down">
+                                <polyline transform="translate(9.500000, 6.500000) rotate(45.000000) translate(-9.500000, -6.500000) " points="5 11 14 11 14 2"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
