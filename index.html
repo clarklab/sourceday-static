@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SourceDay</title>
+	<title>Purchase Order Management Software | SourceDay</title>
 	<link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap" rel="stylesheet">
@@ -22,16 +22,40 @@
 			<h1 class="logo m0"><a href="index.html">Source<span>Day</span></a></h1>
 		</div>
 		<div class="col col-6 right-align">
+			<a href="#" class="menu-trigger pr3"><img src="images/icon-hamburger.svg" alt=""></a>
 			<a href="#" class="button h3 bg-green">Demo</a>
 		</div>
-		<nav class="absolute xs-hide sm-hide" style="width:100%; max-width:72rem; left:50%; transform: translateX(-50%); line-height: 80px;">
-			<div class="col-right col-12 md-col-9">
-				<a href="#" class="light pr3">Solution</a>
-				<a href="#" class="light pr3">Why SourceDay</a>
-				<a href="#" class="light pr3">Resources</a>
-				<a href="#" class="light pr3">Company</a>
-			</div>
-		</nav>
+
+		<nav id="site-navigation" class="main-navigation absolute" aria-label="Top Menu">
+			<div class="menu-main-container col-12 md-col-9 col-right"><ul id="menu-main" class="main-menu"><li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5 is-focused"><a href="#" aria-haspopup="true" aria-expanded="false">Solution</a>
+<ul class="sub-menu">
+	<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="https://sourceday.com/solution/">Features</a></li>
+	<li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="https://sourceday.com/mobile-app/">SourceDay Mobile</a></li>
+	<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="https://sourceday.com/integrations/">ERP Integrations</a></li>
+</ul>
+</li>
+<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6"><a href="#" aria-haspopup="true" aria-expanded="false">Why SourceDay</a>
+<ul class="sub-menu">
+	<li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="https://sourceday.com/for-buyers/">For Buyers</a></li>
+	<li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="https://sourceday.com/for-sellers/">For Sellers</a></li>
+</ul>
+</li>
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7"><a href="#" aria-haspopup="true" aria-expanded="false">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="https://sourceday.com/resources/">Featured</a></li>
+	<li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a href="https://sourceday.com/blog/">Blog</a></li>
+	<li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="https://sourceday.com/news-events/">News &amp; Events</a></li>
+</ul>
+</li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8"><a href="#" aria-haspopup="true" aria-expanded="false">Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="https://sourceday.com/about-us/">About Us</a></li>
+	<li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a href="https://sourceday.com/partners/">Partners</a></li>
+	<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="https://sourceday.com/contact-us/">Contact Us</a></li>
+	<li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a href="https://sourceday.com/careers/">Careers</a></li>
+</ul>
+</li>
+</ul></div>		</nav>
 	</div>
 	</div>
 </header>
@@ -39,8 +63,8 @@
 <!-- HOME HERO -->
 <div class="home-hero clearfix pb4 mb4" style="background-image:url(images/hero-bg.jpg);">
 	<div class="inner">
-		<div class="clearfix mxn4">
-		<div class="content lg-col-6 ml-auto mb3 p4 rellax" data-rellax-speed="4">
+		<div class="clearfix">
+		<div class="content col-10 sm-col-8 md-col-8 lg-col-6 ml-auto mb3 p4 rellax" data-rellax-speed="4">
 			<p class="h1 big mt3 mb0">Trust your <br><span class="hold">&nbsp;</span><span class="swap"></span></p>
 			<p class="mb3"><a href="#" class="cta mt1">See How</a></p>
 		</div>
@@ -74,63 +98,63 @@
 	<div class="carousel" data-flickity='{ "contain": true, "prevNextButtons": false, "cellAlign": "left", "wrapAround": true, "fade": true, "autoplay": true }'>
 
 	<div class="carousel-cell flex flex-wrap pb2">
-		<div class="item sm-col-6 md-col-4 p3">
+		<div class="item col-6 sm-col-6 md-col-4 p3">
 			<img src="images/logo-weir.png" class="fit" alt="">
 		</div>
-		<div class="item sm-col-6 md-col-4 p3 study">
+		<div class="item col-6 sm-col-6 md-col-4 p3 study">
 			<img src="images/logo-federal.png" class="fit" alt="">
 			<a href="#">Case Study</a>
 		</div>
-		<div class="item sm-col-6 md-col-4 p3 study">
+		<div class="item col-6 sm-col-6 md-col-4 p3 study">
 			<img src="images/logo-cmd.png" class="fit" alt="">
 			<a href="#">Case Study</a>
 		</div>
-		<div class="item sm-col-6 md-col-4 p3 study">
+		<div class="item col-6 sm-col-6 md-col-4 p3 study">
 			<img src="images/logo-ce-machine.png" class="fit" alt="">
 			<a href="#">Case Study</a>
 		</div>
-		<div class="item sm-col-6 md-col-4 p3">
+		<div class="item col-6 sm-col-6 md-col-4 p3">
 			<img src="images/logo-dell.png" class="fit" alt="">
 		</div>
-		<div class="item sm-col-6 md-col-4 p3">
+		<div class="item col-6 sm-col-6 md-col-4 p3">
 			<img src="images/logo-promach.png" class="fit" alt="">
 		</div>
 	</div>
 
 	<div class="carousel-cell flex flex-wrap pb2">
-		<div class="item sm-col-6 md-col-4 p3">
+		<div class="item col-6 sm-col-6 md-col-4 p3">
 			<img src="images/logo-bennington.png" class="fit" alt="">
 		</div>
-		<div class="item sm-col-6 md-col-4 p3 study">
+		<div class="item col-6 sm-col-6 md-col-4 p3 study">
 			<img src="images/logo-global-interconnect.png" class="fit" alt="">
 			<a href="#">Case Study</a>
 		</div>
-		<div class="item sm-col-6 md-col-4 p3 study">
+		<div class="item col-6 sm-col-6 md-col-4 p3 study">
 			<img src="images/logo-jbt.png" class="fit" alt="">
 			<a href="#">Case Study</a>
 		</div>
-		<div class="item sm-col-6 md-col-4 p3 study">
+		<div class="item col-6 sm-col-6 md-col-4 p3 study">
 			<img src="images/logo-leemah.png" class="fit" alt="">
 			<a href="#">Case Study</a>
 		</div>
-		<div class="item sm-col-6 md-col-4 p3">
+		<div class="item col-6 sm-col-6 md-col-4 p3">
 			<img src="images/logo-oliver.png" class="fit" alt="">
 		</div>
-		<div class="item sm-col-6 md-col-4 p3 study">
+		<div class="item col-6 sm-col-6 md-col-4 p3 study">
 			<img src="images/logo-uec.png" class="fit" alt="">
 			<a href="#">Case Study</a>
 		</div>
 	</div>
 
 	<div class="carousel-cell flex flex-wrap pb2">
-		<div class="item sm-col-6 md-col-4 p3">
+		<div class="item col-6 sm-col-6 md-col-4 p3">
 			<img src="images/logo-napoleon.png" class="fit" alt="">
 		</div>
-		<div class="item sm-col-6 md-col-4 p3 study">
+		<div class="item col-6 sm-col-6 md-col-4 p3 study">
 			<img src="images/logo-precision-planting.png" class="fit" alt="">
 			<a href="#">Case Study</a>
 		</div>
-		<div class="item sm-col-6 md-col-4 p3 study">
+		<div class="item col-6 sm-col-6 md-col-4 p3 study">
 			<img src="images/logo-ward-leonard.png" class="fit" alt="">
 			<a href="#">Case Study</a>
 		</div>
@@ -144,21 +168,10 @@
 <!-- FEATURES -->
 <div class="bg-dark mb4">
 
-<div class="clipper">
-<nav class="follow-nav xs-hide sm-hide md-hide">
-	<ol class="list-reset">
-		<li><a href="#with">Who we work with</a></li>
-		<li><a href="#how">Our Platform</a></li>
-		<li><a href="#help">Who we help</a></li>
-		<li><a href="#ask">Ask us anything</a></li>
-	</ol>
-</nav>
-</div>
-
 <div id="how" class="platform max-width-4 mx-auto section relative mb4">
 	<div class="clearfix">
-	<div class="col-right col-12 md-col-9 pt4">
-		<p class="lg-col-10 mb0 mt2 h4 light"><span class="medium">The SourceDay Platform</span> automates all supplier collaboration, from RFQ to PO acknowledgment to supplier invoice and final payment—all in one unified place, creating mutual visibility and accountability between buyers and suppliers.</p>
+	<div class="col-right col-12 md-col-9 pt4 mb3">
+		<p class="lg-col-10 mb0 mt2 h3 light"><span class="medium">The SourceDay Platform</span> automates all supplier collaboration, from RFQ to PO acknowledgment to supplier invoice and final payment—all in one unified place, creating mutual visibility and accountability between buyers and suppliers.</p>
 		<div class="slides clearfix pt4">
 
 			<div class="slide md-flex items-center" id="slide-feature2">
@@ -281,6 +294,16 @@
 	</div>	
 	</div>
 </div>
+<div class="clipper">
+<nav class="follow-nav xs-hide sm-hide md-hide">
+	<ol class="list-reset">
+		<li><a href="#with">Who we work with</a></li>
+		<li><a href="#how">Our Platform</a></li>
+		<li><a href="#help">Who we help</a></li>
+		<li><a href="#ask">Ask us anything</a></li>
+	</ol>
+</nav>
+</div>
 </div>
 
 
@@ -296,6 +319,7 @@
 					<p class="light">Instead of chasing down changes and updating spreadsheets, you collaborate with suppliers through an online platform that saves time, prevents surprises, and eliminates errors. So, you always get the right parts at the right price at the right time. </p>
 					<p><a href="#" class="cta h3 green mt2">See How</a></p>
 				</div>
+				<div class="feature-photo" style="background-image: url(images/help-procurement.jpg)"></div>
 			</div>
 			<div class="item md-col-8 mb3 pb3">
 				<p class="h3 help-title bold uppercase m0">IT Department</p>
@@ -305,6 +329,7 @@
 					<p class="light">We automate sourcing for data quality you can count on. One solution for POs, AP and RFQ that directly integrates with all standard ERP systems. All with an easy implementation and outsourced support, so there’s no drain on your IT team.</p>
 					<p><a href="#" class="cta h3 green mt2">See How</a></p>
 				</div>
+				<div class="feature-photo" style="background-image: url(images/photo-blank.jpg)"></div>
 			</div>
 			<div class="item md-col-8 mb3 pb3">
 				<p class="h3 help-title bold uppercase m0">Finance</p>
@@ -314,6 +339,7 @@
 					<p class="light">That’s the power of a  truly efficient supply chain. Plus, greater accuracy prevents overpayments to suppliers and cuts expedite fees. By removing the AP bottlenecks and reducing safety stock, you can free up working capital and drive more cash to your bottom line.</p>
 					<p><a href="#" class="cta h3 green mt2">See How</a></p>
 				</div>
+				<div class="feature-photo" style="background-image: url(images/help-procurement.jpg)"></div>
 			</div>
 			<div class="item md-col-8 mb3 pb3">
 				<p class="h3 help-title bold uppercase m0">Suppliers</p>
@@ -323,10 +349,11 @@
 					<p class="light">With our automated platform, you always know where you stand with your customers—without the flurry of emails and calls. Even better, you get paid faster and more accurately. Free onboarding means you can make it happen as fast and easily as possible.</p>
 					<p><a href="#" class="cta h3 green mt2">See How</a></p>
 				</div>
+				<div class="feature-photo" style="background-image: url(images/photo-blank.jpg)"></div>
 			</div>
 		</div>
 	</div>
-	<div class="feature-photo xs-hide sm-hide" style="background-image: url(images/help-procurement.jpg)"></div>
+	
 	<div class="shade" style="background-image: url(images/help-background.jpg)">
 		<div class="clipper">
 		<nav class="follow-nav xs-hide sm-hide md-hide">
@@ -413,7 +440,7 @@
 		</div>
 	</div>
 </div>
-<div class="feature-image" style="background-image: url(images/contact-background.jpg)"></div>
+<div class="feature-image xs-hide sm-hide md-hide" style="background-image: url(images/contact-background.jpg)"></div>
 </div>
 
 <div class="bg-dark py4">
@@ -639,6 +666,17 @@ $( ".item" ).on( "click", function() {
 		  $(this).addClass("active");
 		});
 
+function handler1() {
+    $( ".main-navigation" ).addClass( "open" );
+	$(this).addClass("active");
+	$(this).one("click", handler2);
+}
+function handler2() {
+    $( ".main-navigation" ).removeClass( "open" );
+	$(this).removeClass("active");
+	$(this).one("click", handler1);
+}
+$(".menu-trigger").one("click", handler1);
 
 	</script>
 </body>

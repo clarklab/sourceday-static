@@ -159,10 +159,123 @@ header.main .button{
 header.main .button:hover{
 	background:var(--navy);
 }
-.home header .max-width-4{
-	padding:0;
-}
 /** END OF MAIN NAV **/
+
+/** WP NAV **/
+
+.main-navigation{
+	display: none;
+}
+
+
+.main-navigation ul{
+	list-style: none;
+	margin:0 0 1rem 0;
+	padding:0rem;
+}
+
+.main-navigation.open{
+	padding:2rem;
+	box-shadow: 0 40px 40px 0 rgba(0,0,0,0.2);
+	width:100%;
+	background: var(--white);
+	top:80px;
+	left:0;
+	display: block;
+}
+.main-navigation.open a{
+	padding:.25rem 0;
+	display: block;
+}
+.main-navigation.open .sub-menu{
+	padding-left:1rem;
+	font-family: "gordita-light";
+}
+
+.main-navigation .sub-menu li a{
+	white-space: nowrap;
+}
+.main-navigation .sub-menu li:hover a{
+	color:var(--green-punch);
+}
+
+@media screen and (min-width:52em){
+
+	.main-navigation{
+		box-shadow: none;
+		top:auto;
+		display: block;
+	}
+
+	.menu-trigger{
+		display: none;
+	}
+
+	.main-navigation .menu-item-has-children{
+		float:left;
+		position: relative;
+		padding-right:2rem;
+	}
+	.main-navigation .menu-item-has-children:hover a{
+		position: relative;
+		z-index: 2;
+	}
+
+	.main-navigation{
+		width:100%;
+		max-width:72rem;
+		left:50%;
+		transform: translateX(-50%);
+		line-height: 80px;
+	}
+	.main-navigation ul{
+		padding:0;
+		list-style: none;
+		margin:0;
+	}
+	.main-navigation .sub-menu{
+		position: absolute;
+		left: 0;
+		padding: 0;
+		list-style: none;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+		clip: rect(1px, 1px, 1px, 1px);
+		font-family: "gordita-light";
+	}
+	.menu-item-has-children:hover .sub-menu {
+	  width: auto;
+	  min-width: 140px;
+	  height: auto;
+	  clip: auto;
+	  top:0px;
+	  padding-top:80px;
+	  overflow: visible;
+	}
+	.menu-item-has-children:hover .sub-menu:before{
+		box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
+		content:" ";
+		display: block;
+		position: absolute;
+		top:0;
+		left:-1.5rem;
+		right:-1.5rem;
+		bottom:-1.5rem;
+		background: var(--white);
+		z-index: 1;
+	}
+	.main-navigation .sub-menu li{
+		line-height: 34px;
+		position: relative;
+		z-index: 2;
+		
+	}
+	
+}
+
+/** END OF WP NAV **/
 
 /** FOOTER */
 footer{
@@ -185,6 +298,7 @@ footer p{
 	top:100px;
 	transform: translateX(-50%);
 	position: fixed;
+	pointer-events: all;
 }
 
 .follow-nav a{
@@ -255,6 +369,7 @@ footer p{
 
 
 .clipper{position: absolute;
+	pointer-events: none;
     top: 0;
     left: 0;
     right: 0;
@@ -453,22 +568,45 @@ footer p{
 	top:-4rem;
 	bottom:-4rem;
 	left:-12rem;
-	right:16.25%;
+	right:0;
 	display: block;
 	z-index: 1;
 	background-size: cover;
 	background-position: top center;
 }
 .who-we-help .feature-photo{
-	position: absolute;
-	top:4rem;
-	bottom:4rem;
-	right:0;
-	left:60%;
-	background: var(--green-punch);
-	z-index: 2;
+	position: relative;
+	width: 100%;
+	padding-top:45%;
+	opacity: 0;
+	display: none;
 	background-size: cover;
 	background-position: top center;
+}
+.who-we-help .active .feature-photo{
+	opacity: 1;
+	display: block;
+}
+@media screen and (min-width:72em){
+	.who-we-help .feature-photo{
+		position: absolute;
+		top:4rem;
+		bottom:4rem;
+		right:-50%;
+		left:75%;
+		background: var(--green-punch);
+		background-position: top center;
+		z-index: 2;
+		opacity:0;
+		padding-top:0;
+		width:auto;
+	}
+	.who-we-help .active .feature-photo{
+		opacity: 1;
+	}
+	.who-we-help .shade{
+		right:16.25%;
+	}
 }
 /** END OF WHO WE HELP **/
 
@@ -562,7 +700,7 @@ footer p{
 /** END OF CONTACT FORM **/
 
 /** RESPONSIVE STUFF **/
-@media screen and (max-width:40em){
+@media screen and (max-width:72em){
 	.max-width-4{
 		padding-right:2rem;
 		padding-left:2rem;
@@ -596,7 +734,7 @@ footer p{
 	z-index: 2;
 }
 @media screen and (max-width:40em){
-	.page-hero .big{
+	.home-hero .big, .page-hero .big{
 		font-size:2.75rem;
 	}
 }
@@ -757,7 +895,7 @@ footer p{
 @media screen and (min-width:72em){
 
 	h2, .h2{font-size:2.1rem;}
-	.mb4{margin-bottom:10rem;}
+	.mb4{margin-bottom:6.5rem;}
 	.platform.mb4{margin-bottom:20rem;}
 
 }
