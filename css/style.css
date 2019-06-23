@@ -444,11 +444,6 @@ footer p{
 	overflow:visible;
 }
 
-#testimonials .flickity-page-dots{
-	top:-1rem;
-	bottom:auto;
-}
-
 /** PLATFORM **/
 
 .platform .slides .slide{
@@ -501,12 +496,7 @@ footer p{
 	border-top:6px solid var(--light);
 	transition: .1s ease all;
 }
-.slides path[stroke="rgb(15,40,50)"]{
-	stroke:var(--white);
-}
-.slides path[fill="rgb(57,64,66)"]{
-	fill:var(--white);
-}
+
 .platform .card.is-nav-selected .shade{
 	top:-1.5rem;
 	bottom:-1.5rem;
@@ -528,8 +518,22 @@ footer p{
 	color:var(--green-punch);
 }
 
-.platform .flickity-viewport{
-	overflow: visible;
+
+@media screen and (min-width: 72em){
+	.slides path[stroke="rgb(15,40,50)"]{
+		stroke:var(--white);
+	}
+	.slides path[fill="rgb(57,64,66)"]{
+		fill:var(--white);
+	}
+	.platform .flickity-viewport{
+		overflow: visible;
+	}
+}
+@media screen and (max-width: 72em){
+	.platform .order-2 {
+		background-color:var(--white);
+	}
 }
 /** END OF PLATFORM **/
 
@@ -689,13 +693,17 @@ footer p{
 }
 .contact-form .feature-image{
 	position: absolute;
-	top:12rem;
+	top:14rem;
 	left:0;
 	bottom:0;
 	right:0;
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
+}
+.contact-form iframe{
+	width:100%;
+	height: 640px;
 }
 /** END OF CONTACT FORM **/
 

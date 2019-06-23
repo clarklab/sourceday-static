@@ -49,7 +49,7 @@
 </li>
 <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8"><a href="#" aria-haspopup="true" aria-expanded="false">Company</a>
 <ul class="sub-menu">
-	<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="https://sourceday.com/about-us/">About Us</a></li>
+	<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="about.html">About Us</a></li>
 	<li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a href="https://sourceday.com/partners/">Partners</a></li>
 	<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="https://sourceday.com/contact-us/">Contact Us</a></li>
 	<li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a href="https://sourceday.com/careers/">Careers</a></li>
@@ -61,12 +61,16 @@
 </header>
 
 <!-- HOME HERO -->
-<div class="home-hero clearfix pb4 mb4" style="background-image:url(images/hero-bg.jpg);">
+<style>
+	.home-hero{background-image:url(images/mobile-hero-bg.jpg);}
+	@media screen and (min-width:72em){.home-hero{background-image:url(images/hero-bg.jpg);}}
+</style>
+<div class="home-hero clearfix pb4 mb4">
 	<div class="inner">
 		<div class="clearfix">
 		<div class="content col-10 sm-col-8 md-col-8 lg-col-6 ml-auto mb3 p4 rellax" data-rellax-speed="4">
 			<p class="h1 big mt3 mb0">Trust your <br><span class="hold">&nbsp;</span><span class="swap"></span></p>
-			<p class="mb3"><a href="#" class="cta mt1">See How</a></p>
+			<p class="mb3"><a href="#intro" class="cta mt1">See How</a></p>
 		</div>
 		</div>
 	</div>
@@ -84,7 +88,7 @@
 
 
 <!-- LEAD -->
-<div class="lead max-width-4 mx-auto mb4 clearfix">
+<div id="intro" class="lead max-width-4 mx-auto mb4 clearfix">
 	<div class="col-right col-12 md-col-9">
 	<p class="h2 light lg-col-11">Now buyers and suppliers can collaborate without endless spreadsheets and email messages. Our SaaS solution updates your ERP automatically with accurate price, quantity, and lead-time data. So you stop costly surprises in your factory and ship more orders on-time.</p>
 	</div>
@@ -374,44 +378,37 @@
 		<div class="col-right col-12 md-col-9">
 		<div class="carousel carousel-nav" data-flickity='{ "contain": true, "prevNextButtons": false, "cellAlign": "left", "wrapAround": true, "fade": true, "autoPlay": true }'>
 			<div class="testimonial carousel-cell col-12">
-				<p class="h2 quote light">I was actually excited to have a better way to manage the account. SourceDay consolidates every aspect of account management into <strong class="green regular">a single system</strong> that is easy to use with minimal training required. It’s an ideal buyer-supplier collaboration tool.</p>
+				<p class="h2 quote light">SourceDay has changed everything in the best possible way. We can see shipping dates, shipping confirmations, what orders are hot and which vendors need a prompting—all in one place, visible to all stakeholders.</p>
 				<cite>
-					<div class="avatar" style="background-image:url(https://www.fillmurray.com/460/300)"></div>
-				<p class="h5 uppercase m0 bold">Kenny Zielinski</p>
-				<p class="h5 uppercase m0 light">SMC Corporation of America</p></cite>
-			</div>
-			<div class="testimonial carousel-cell col-12">
-				<p class="h2 quote light">SourceDay has <strong class="green regular">changed everything in the best possible way</strong>. Grading suppliers through scorecards is now completely automated. We can see shipping dates, shipping confirmations, what orders are hot and which vendors need a prompting - all in one place, visible to all stakeholders.</p>
-				<cite>
-					<div class="avatar" style="background-image:url(https://www.fillmurray.com/460/300)"></div>
+					<div class="avatar" style="background-image:url(images/photo-blank.jpg)"></div>
 				<p class="h5 uppercase m0 bold">Tina Grow</p>
 				<p class="h5 uppercase m0 light">IT Director, Rocore</p></cite>
 			</div>
 			<div class="testimonial carousel-cell col-12">
-				<p class="h2 quote light">With SourceDay, we can pull up an individual supplier, choose the POs we want and hit send. The supplier gets immediate notification and can either make adjustments or let us know if they can deliver on time. <strong class="green regular">We love the Radar feature that tells us what is coming due in the next 10 days</strong>. We set up specific emails and frequencies to customize what message the supplier gets from us and how often.</p>
+				<p class="h2 quote light">SourceDay consolidates procurement into <strong class="green regular">a single system.</strong> It’s the ideal buyer-supplier collaboration tool.</p>
 				<cite>
-					<div class="avatar" style="background-image:url(https://www.fillmurray.com/460/300)"></div>
-				<p class="h5 uppercase m0 bold">Heath Harp</p>
-				<p class="h5 uppercase m0 light">Purchasing Manager, CE Machine</p></cite>
+					<div class="avatar" style="background-image:url(images/photo-blank.jpg)"></div>
+				<p class="h5 uppercase m0 bold">Kenny Zielinski</p>
+				<p class="h5 uppercase m0 light">SMC Corporation of America</p></cite>
 			</div>
 			<div class="testimonial carousel-cell col-12">
-				<p class="h2 quote light">If your organization lives and dies by data that’s in the business system, you must understand it and make sure your data is good data. SourceDay offers a centralized location that makes vendor updates easily accessible, promoting users to be accountable for <strong class="green regular">ensuring data is up to date and accurate</strong>. Buyers are thus empowered to be more effective and productive.</p>
+				<p class="h2 quote light">SourceDay offers a centralized location that makes vendor updates easily accessible, promoting users to be accountable for ensuring data is up to date and accurate. Buyers are empowered to be more effective and productive.</p>
 				<cite>
-					<div class="avatar" style="background-image:url(https://www.fillmurray.com/460/300)"></div>
+					<div class="avatar" style="background-image:url(images/photo-blank.jpg)"></div>
 				<p class="h5 uppercase m0 bold">Brian Made</p>
 				<p class="h5 uppercase m0 light">Global Supply  Manager, UEC (Universal Electric Corp)</p></cite>
 			</div>
 			<div class="testimonial carousel-cell col-12">
-				<p class="h2 quote light">SourceDay has easily <strong class="green regular">saved me about 10 hours per week</strong> with order updates, tracking orders and emails regarding orders...I can see what vendor acknowledged what and get a complete history on every part and PO.</p>
+				<p class="h2 quote light">SourceDay has easily saved me about 10 hours per week with order updates, tracking orders and emails regarding orders... I can see what vendors acknowledged and get a complete history on every part and PO.</p>
 				<cite>
-					<div class="avatar" style="background-image:url(https://www.fillmurray.com/460/300)"></div>
+					<div class="avatar" style="background-image:url(images/photo-blank.jpg)"></div>
 				<p class="h5 uppercase m0 bold">Mary Buhr</p>
 				<p class="h5 uppercase m0 light">Buyer, Federal</p></cite>
 			</div>
 			<div class="testimonial carousel-cell col-12">
 				<p class="h2 quote light">Having everything in one location provides immeasurable value, not the least of which is making it <strong class="green regular">so much easier to see what’s going on</strong> with POs at a glance.</p>
 				<cite>
-					<div class="avatar" style="background-image:url(https://www.fillmurray.com/460/300)"></div>
+					<div class="avatar" style="background-image:url(images/photo-blank.jpg)"></div>
 				<p class="h5 uppercase m0 bold">Kathy Hamilton</p>
 				<p class="h5 uppercase m0 light">Customer Service Representative, CMD</p></cite>
 			</div>
@@ -427,13 +424,13 @@
 	<div class="clearfix pb4">
 		<div class="col-right col-12 md-col-9 pb4">
 			<div class="mxn3">
-		<div class="sm-col md-col-4 p3">
+		<div class="sm-col md-col-4 pt4 px3">
 			<p class="h3 mb1">Have a question?</p>
 			<p class="h5 light m0">Fill out this brief form and we’ll get back to you within one business day.</p>
 		</div>
 		<div class="sm-col md-col-8 p3">
-			<div class="form bg-light center p4" style="height:600px;">
-				FORM
+			<div class="form bg-light center pt4 px4 pb3">
+				<iframe src="https://www2.sourceday.com/l/273532/2017-08-30/2q6qyzj" frameborder="0"></iframe>
 			</div>
 		</div>
 		</div>
@@ -652,14 +649,22 @@ sections.waypoint({
     offset: '30%'
 })
 
+// external js: flickity.pkgd.js
 
-$('.slides').flickity({
-  // options
+// Flickity options, defaults
+var options = {
   cellAlign: 'left',
   contain: true,
   fade: true,
   prevNextButtons: false,
-});
+};
+
+// disable draggable at 1200px
+if ( matchMedia('screen and (max-width: 1200px)').matches ) {
+  options.fade = false;
+}
+
+$('.slides').flickity( options );
 
 $( ".item" ).on( "click", function() {
 		  $( ".item" ).removeClass( "active" );
