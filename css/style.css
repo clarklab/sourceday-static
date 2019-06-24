@@ -615,7 +615,7 @@ footer p{
 	opacity: 0;
 	display: none;
 	background-size: cover;
-	background-position: top center;
+	background-position: center center;
 }
 .who-we-help .active .feature-photo{
 	opacity: 1;
@@ -628,7 +628,6 @@ footer p{
 		bottom:4rem;
 		right:-50%;
 		left:75%;
-		background: var(--green-punch);
 		background-position: top center;
 		z-index: 2;
 		opacity:0;
