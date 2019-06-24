@@ -15,7 +15,7 @@
 
 <body>
 
-<header class="main">
+<header class="main" style="display:none;">
 	<div class="max-width-4 mx-auto">
 	<div class="clearfix">
 		<div class="col col-5">
@@ -206,7 +206,7 @@
 
 
 <!-- PHOTO PARALLAX -->
-<div class="photo-parallax mb1" style="display:none;">
+<div class="photo-parallax mb1">
 	<div class="max-width-4 mx-auto">
 	<img src="images/group-1.jpg" alt="" class="fit one">
 	<div class="clearfix">
@@ -302,6 +302,20 @@
 	    $('.stat').addClass('active');
 	  }
 	});
+
+	function handler1() {
+    $( ".main-navigation" ).addClass( "open" );
+    $( ".menu-trigger img").attr("src","images/icon-close.svg");
+	$(this).addClass("active");
+	$(this).one("click", handler2);
+}
+function handler2() {
+    $( ".main-navigation" ).removeClass( "open" );
+    $( ".menu-trigger img").attr("src","images/icon-hamburger.svg");
+	$(this).removeClass("active");
+	$(this).one("click", handler1);
+}
+$(".menu-trigger").one("click", handler1);
 	
 	</script>
 </body>
