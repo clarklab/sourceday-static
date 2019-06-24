@@ -138,13 +138,20 @@ header.main{
 	left:0;
 	right:0;
 }
+
 .logo {
 	font-family: "gordita-medium";
 	font-size: 1.25rem;
 	line-height: 80px;
 	height:80px;
 	letter-spacing: -0.5px;
+	position: relative;
 }
+.logo a, header.main .button{
+	position: relative;
+	z-index: 10;
+}
+
 @media screen and (min-width:72em){
 	.logo {
 		font-size: 1.6rem;
@@ -537,10 +544,17 @@ footer p{
 	.platform .flickity-viewport{
 		overflow: visible;
 	}
+
 }
 @media screen and (max-width: 72em){
 	.platform .order-2 {
 		background-color:var(--white);
+	}
+	.platform .slides .fit{
+		height: 200px;
+	}
+	.platform .h3.pt3{
+		padding-top:0;
 	}
 }
 /** END OF PLATFORM **/
@@ -618,6 +632,9 @@ footer p{
 	}
 	.who-we-help .shade{
 		right:16.25%;
+	}
+	.who-we-help .accordion.p3{
+		padding:4rem;
 	}
 }
 /** END OF WHO WE HELP **/
