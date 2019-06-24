@@ -18,10 +18,10 @@
 <header class="main">
 	<div class="max-width-4 mx-auto">
 	<div class="clearfix">
-		<div class="col col-6">
+		<div class="col col-5">
 			<h1 class="logo m0"><a href="index.html">Source<span>Day</span></a></h1>
 		</div>
-		<div class="col col-6 right-align">
+		<div class="col col-7 right-align">
 			<a href="#" class="menu-trigger pr3"><img src="images/icon-hamburger.svg" alt=""></a>
 			<a href="#" class="button h3 bg-green">Demo</a>
 		</div>
@@ -64,6 +64,7 @@
 <style>
 	.home-hero{background-image:url(images/mobile-hero-bg.jpg);}
 	@media screen and (min-width:72em){.home-hero{background-image:url(images/hero-bg.jpg);}}
+	@media screen and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {.home-hero{background-image:url(images/hero-bg-retina.jpg);}}
 </style>
 <div class="home-hero clearfix pb4 mb4">
 	<div class="inner">
@@ -673,11 +674,13 @@ $( ".item" ).on( "click", function() {
 
 function handler1() {
     $( ".main-navigation" ).addClass( "open" );
+    $( ".menu-trigger img").attr("src","images/icon-close.svg");
 	$(this).addClass("active");
 	$(this).one("click", handler2);
 }
 function handler2() {
     $( ".main-navigation" ).removeClass( "open" );
+    $( ".menu-trigger img").attr("src","images/icon-hamburger.svg");
 	$(this).removeClass("active");
 	$(this).one("click", handler1);
 }
