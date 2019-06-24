@@ -206,7 +206,7 @@
 
 
 <!-- PHOTO PARALLAX -->
-<div class="photo-parallax mb1">
+<div class="photo-parallax mb4">
 	<div class="max-width-4 mx-auto">
 	<img src="images/group-1.jpg" alt="" class="fit one">
 	<div class="clearfix">
@@ -222,17 +222,17 @@
 
 
 <!-- FLICKITY 3-UP -->
-<div class="flickity-3 max-width-4 mx-auto mb4 clearfix">
+<div class="max-width-4 mx-auto mb4 clearfix">
 	<p class="h3 bold uppercase m0">Our Investors</p>
-	<div class="carousel">
-	  <div class="carousel-cell">
-	  	<img src="images/logo-draper.png" alt="">
+	<div class="pt3">
+	  <div class="col col-6 md-col-3 p3">
+	  	<img src="images/logo-silverton.png" class="fit" alt="">
 	  </div>
-	  <div class="carousel-cell">
-	  	<img src="images/logo-silverton.png" alt="">
+	  <div class="col col-6 md-col-3 p3">
+	  	<img src="images/logo-draper.png" class="fit" alt="">
 	  </div>
-	  <div class="carousel-cell">
-	  	<img src="images/logo-atx-venture.png" alt="">
+	  <div class="col col-6 md-col-3 p3">
+	  	<img src="images/logo-atx-venture.png" class="fit" alt="">
 	  </div>
 	</div>
 </div>
@@ -287,7 +287,21 @@
 
 	<script>
 
-	
+	if (Modernizr.touch) {
+
+	}
+	else 
+	{
+	    var rellax = new Rellax('.rellax');
+	}
+		
+
+	var inview = new Waypoint.Inview({
+	  element: $('.stats')[0],
+	  enter: function(direction) {
+	    $('.stat').addClass('active');
+	  }
+	});
 
 	function handler1() {
     $( ".main-navigation" ).addClass( "open" );

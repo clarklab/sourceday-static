@@ -431,7 +431,7 @@ footer p{
 /** END OF HOME HERO **/
 
 /** HOME PAGE NAV **/
-.section:before{
+.section:before, #intro:before{
 	content:" ";
 	display: block;
 	height: 80px;
@@ -727,7 +727,7 @@ footer p{
 }
 .contact-form .feature-image{
 	position: absolute;
-	top:14rem;
+	top:20rem;
 	left:0;
 	bottom:0;
 	right:0;
