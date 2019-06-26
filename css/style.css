@@ -101,7 +101,7 @@ p{line-height: 1.5; font-weight: 200;}
 .bold{font-family: 'gordita-bold'; font-weight: bold;}
 .medium{font-family: 'gordita-medium';}
 .light{font-family: 'gordita-light'; font-weight: 200}
-.regular{font-family: 'gordita-regular'; font-weight: 200}
+.regular{font-family: 'gordita'; font-weight: 200}
 .small{font-size:.65rem;}
 .big{font-size: 4.70rem; letter-spacing: -1.5px; line-height:1.2;}
 .quote {
