@@ -96,7 +96,7 @@ body a{color:#0F2832; text-decoration: none;}
 
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-weight: normal; line-height: 1.5}
-h3, .h3:not(.button){ line-height: 1.35}
+.h3.uppercase{ line-height: 1.35}
 p{line-height: 1.5; font-weight: 200;}
 .bold{font-family: 'gordita-bold'; font-weight: bold;}
 .medium{font-family: 'gordita-medium';}
@@ -111,11 +111,17 @@ p{line-height: 1.5; font-weight: 200;}
 .quote:before {
     content: open-quote;
     position: absolute;
-    left: -16px;
+    left: -9px;
    
 }
 .quote:after {
     content: close-quote;
+}
+@media screen and (min-width:52em){
+	.quote:before {
+	    left: -16px;
+	   
+	}
 }
 
 .cta,.h3.cta{font-family: 'gordita-medium'; display: inline-block; color:#18BE00; border-bottom:3px solid #18BE00; font-weight: 500; transition: .3s ease color; letter-spacing: -0.5px;}
@@ -141,7 +147,7 @@ header.main{
 
 .logo {
 	font-family: "gordita-medium";
-	font-size: 1.25rem;
+	font-size: 1.4rem;
 	line-height: 80px;
 	height:80px;
 	letter-spacing: -0.5px;
@@ -201,7 +207,7 @@ header.main .button:hover{
 	display: block;
 }
 .main-navigation.open .sub-menu{
-	padding-left:1rem;
+	padding-left:0;
 	font-family: "gordita-light";
 }
 
@@ -300,7 +306,7 @@ header.main .button:hover{
 
 /** FOOTER */
 footer{
-	font-size: .9rem;
+	font-size: 1rem;
 }
 footer .logo{
 	line-height: 1;
@@ -451,13 +457,19 @@ footer p{
 /** END OF HOME HERO **/
 
 /** HOME PAGE NAV **/
-@media screen and (min-width: 64em){
+
 .section:before, #intro:before{
 	content:" ";
 	display: block;
 	height: 80px;
 }
+
+@media screen and (max-width: 52em){
+	#help.section:before{
+		display: none;
+	}
 }
+
 /** END OF HOME PAGE NAV **/
 
 /** TESTIMONIALS **/
@@ -516,6 +528,10 @@ footer p{
 	padding:2.5rem 1rem 2rem;
 	z-index: 2;
 }
+
+.platform .flickity-page-dots{
+		display: none;
+	}
 
 .platform .card a, .platform .card .lottie{
 	position: relative;
@@ -584,26 +600,61 @@ footer p{
 		overflow: visible;
 	}
 
+
 }
 @media screen and (max-width: 52em){
+	#platform.mb4{
+		margin-bottom:0;
+	}
+	#platform #how.mb3{
+		margin-bottom:0;
+	}
 	.platform .order-2 {
 		background-color:#FFFFFF;
 	}
+	.platform .slides .cta{
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	.platform .slides{
+		margin-top:2rem;
+	}
+	.platform .slides .content{
+		padding-top:1rem;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
 	.platform .slides .fit{
-		height: 200px;
+		padding: 2rem 1rem .5rem;
+		height: 160px;
+	}
+	.platform .slides .fit#automatedSlideAnimation{
+		padding: 2rem 1rem .5rem;
+		height: 140px;
 	}
 	.platform .h3.pt3{
 		padding-top:0;
 	}
+	.platform .flickity-page-dots{
+		display: block;
+		bottom:auto;
+		top:20px;
+	}
+	.platform .flickity-page-dots .dot{
+		background-color: white;
+	}
+	.platform .flickity-page-dots .dot.is-selected{
+		background-color: #18BE00;
+	}
+
 }
 /** END OF PLATFORM **/
 
 /** WHO WE HELP **/
-#help{
-	padding:4rem 0;
-}
+
 .who-we-help{
 	position: relative;
+	padding:4rem 0;
 }
 .who-we-help .accordion{
 	position: relative;
@@ -634,8 +685,8 @@ footer p{
 }
 .who-we-help .shade{
 	position: absolute;
-	top:-4rem;
-	bottom:-4rem;
+	top:0rem;
+	bottom:0rem;
 	left:-12rem;
 	right:0;
 	display: block;
@@ -746,14 +797,16 @@ footer p{
 		margin:0 0 0 -3rem;
 	}
 	.logo-grid .flickity-page-dots{
-		left:4rem;
+		left:3rem;
 	}
 }
 /** END OF LOGO GRID **/
 
 /** CONTACT FORM **/
+
 .contact-form{
 	position: relative;
+	pointer-events: none;
 }
 .contact-form .inner{
 	z-index: 2;
@@ -772,6 +825,7 @@ footer p{
 .contact-form iframe{
 	width:100%;
 	height: 640px;
+	pointer-events: all;
 }
 /** END OF CONTACT FORM **/
 
@@ -814,10 +868,24 @@ footer p{
 }
 @media screen and (max-width:40em){
 	.home-hero .big, .page-hero .big{
-		font-size:2.75rem;
+		font-size:2.5rem;
 	}
 	.sm-p2{
-		
+		padding:2.5rem;
+	}
+	.home-hero .cta{
+		font-size:1.25rem;
+	}
+}
+@media screen and (max-width:24em){
+	.home-hero .big, .page-hero .big{
+		font-size:2rem;
+	}
+	.sm-p2{
+		padding:1.5rem;
+	}
+	.home-hero .cta{
+		font-size:1rem;
 	}
 }
 /** END OF PAGE HERO**/
@@ -954,6 +1022,19 @@ footer p{
 		max-width:24rem;
 		margin-left:10%;
 		position: absolute;
+	}
+}
+
+@media screen and (max-width: 52em){
+	.photo-parallax .max-width-4{
+		max-width: 100%;
+		padding:0;
+	}
+	.photo-parallax .mb3{
+		margin-bottom: .5rem;
+	}
+	.photo-parallax .px2{
+		padding:0 .25rem;
 	}
 }
 /** END OF PHOTO PARALLAX **/
