@@ -603,12 +603,14 @@ footer p{
 		padding:2.5rem .5rem 1.5rem;
 		z-index: 2;
 	}
+}
+
+@media screen and (max-width: 64em){
 	.platform .card .h5{
 		font-size: .7rem;
 	}
-
-
 }
+
 @media screen and (max-width: 52em){
 	#platform.mb4{
 		margin-bottom:0;
