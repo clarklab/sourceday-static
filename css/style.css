@@ -445,6 +445,9 @@ footer p{
 	height:10000px;
 	z-index: 1;
 }
+.home-hero .content span{
+	white-space: nowrap;
+}
 .home-hero p, .home-hero a{
 	position: relative;
 	z-index: 2;
@@ -888,13 +891,10 @@ footer p{
 }
 @media screen and (max-width:24em){
 	.home-hero .big, .page-hero .big{
-		font-size:2rem;
+		font-size:2.25rem;
 	}
 	.sm-p2{
-		padding:1.5rem;
-	}
-	.home-hero .cta{
-		font-size:1rem;
+		padding:2rem;
 	}
 }
 /** END OF PAGE HERO**/
