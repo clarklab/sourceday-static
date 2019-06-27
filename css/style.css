@@ -218,6 +218,7 @@ header.main .button:hover{
 		box-shadow: none;
 		top:auto;
 		display: block;
+		padding:0 2rem;
 	}
 
 	.menu-trigger{
@@ -304,7 +305,7 @@ footer p{
 /** END OF FOOTER */
 
 .follow-nav {
-	padding:20px 0 0 0;
+	padding:20px 0 0 2rem;
 	max-width: 72rem;
 	width:100%;
 	left:50%;
@@ -312,6 +313,7 @@ footer p{
 	transform: translateX(-50%);
 	position: fixed;
 	pointer-events: all;
+	display: none;
 }
 
 .follow-nav a{
@@ -390,6 +392,18 @@ footer p{
     clip: rect(0, auto, auto, 0);}
 .bg-dark .follow-nav a, .shade .follow-nav a{
 	color:#FFFFFF;
+}
+
+@media screen and (min-width: 54em){
+	.follow-nav {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 72em){
+	.follow-nav {
+		padding:20px 0 0 0;
+	}
 }
 
 /** HOME HERO **/
@@ -569,6 +583,9 @@ footer p{
 /** END OF PLATFORM **/
 
 /** WHO WE HELP **/
+#help{
+	padding:4rem 0;
+}
 .who-we-help{
 	position: relative;
 }
@@ -710,7 +727,7 @@ footer p{
 }
 @media screen and (min-width: 68rem){
 	.logo-grid .carousel{
-		margin:0 0 0 -4.5rem;
+		margin:0 0 0 -3rem;
 	}
 	.logo-grid .flickity-page-dots{
 		left:4rem;
