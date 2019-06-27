@@ -580,7 +580,7 @@ footer p{
 }
 
 
-@media screen and (min-width: 72em){
+@media screen and (min-width: 52em){
 	.slides path{
 		stroke:#FFFFFF;
 	}
@@ -596,8 +596,15 @@ footer p{
 	.slides path[fill="rgb(24,190,0)"]{
 		stroke:rgb(15,40,50);
 	}
-	.platform .flickity-viewport{
+	.platform .cards .flickity-viewport{
 		overflow: visible;
+	}
+	.platform .card{
+		padding:2.5rem .5rem 1.5rem;
+		z-index: 2;
+	}
+	.platform .card .h5{
+		font-size: .7rem;
 	}
 
 
