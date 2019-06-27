@@ -558,11 +558,20 @@ footer p{
 
 
 @media screen and (min-width: 72em){
+	.slides path{
+		stroke:#FFFFFF;
+	}
+	.slides path[stroke="rgb(24,190,0)"]{
+		stroke:rgb(24,190,0);
+	}
 	.slides path[stroke="rgb(15,40,50)"]{
 		stroke:#FFFFFF;
 	}
 	.slides path[fill="rgb(57,64,66)"]{
 		fill:#FFFFFF;
+	}
+	.slides path[fill="rgb(24,190,0)"]{
+		stroke:rgb(15,40,50);
 	}
 	.platform .flickity-viewport{
 		overflow: visible;
