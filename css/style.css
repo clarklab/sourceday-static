@@ -289,6 +289,13 @@ header.main .button:hover{
 	
 }
 
+@media screen and (min-width:72em){
+
+	.main-navigation{
+		padding:0;
+	}
+}
+
 /** END OF WP NAV **/
 
 /** FOOTER */
@@ -808,6 +815,9 @@ footer p{
 @media screen and (max-width:40em){
 	.home-hero .big, .page-hero .big{
 		font-size:2.75rem;
+	}
+	.sm-p2{
+		
 	}
 }
 /** END OF PAGE HERO**/
